@@ -3,13 +3,18 @@
 #include <stdint.h>
 #include <string.h>
 #include <errno.h>
-#include <endian.h>
 #include <unistd.h>
 #include <fcntl.h>
+
+#ifdef __linux__
 #include <linux/limits.h>
+#else
+#include <limits.h>
+#endif
 
 #include <sys/stat.h>
 
+#include "compat_endian.h"
 #include "gxlimg.h"
 #include "fip.h"
 #include "amlcblk.h"

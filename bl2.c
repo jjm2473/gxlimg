@@ -3,10 +3,11 @@
 #include <stdint.h>
 #include <string.h>
 #include <errno.h>
-#include <endian.h>
+
 #include <unistd.h>
 #include <fcntl.h>
 
+#include "compat_endian.h"
 #include "gxlimg.h"
 #include "bl2.h"
 #include "ssl.h"

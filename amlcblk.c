@@ -3,13 +3,13 @@
 #include <stdint.h>
 #include <string.h>
 #include <errno.h>
-#include <endian.h>
 #include <unistd.h>
 #include <fcntl.h>
 
 #include <openssl/evp.h>
 #include <openssl/err.h>
 
+#include "compat_endian.h"
 #include "gxlimg.h"
 #include "amlcblk.h"
 #include "ssl.h"
